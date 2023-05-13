@@ -19,7 +19,8 @@ class UserSeeder extends Seeder
             'name' => Str::random(10),
             'number_phone' => '097362738271',
             'email' => Str::random(10) . '@gmail.com',
-            'password' => Hash::make('superman'),
+            // 'password' => 'superman'
+            'password' => bcrypt('superman'),
         ]);
         // \App\Models\User::factory(1)->create();
 

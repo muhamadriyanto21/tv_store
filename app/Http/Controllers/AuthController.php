@@ -35,7 +35,7 @@ class AuthController extends Controller
             $myuser->remember_token = $token;
             $myuser->save();
 
-            return $token;
+            return 'berhasil login';
         }
     }
 
