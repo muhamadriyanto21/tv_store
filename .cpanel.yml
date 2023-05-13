@@ -1,0 +1,9 @@
+---
+
+deployment:
+
+tasks:
+
+- export DEPLOYPATH=/home/usercpanel/public_html/git
+
+- /bin/cp -r * $DEPLOYPATH
